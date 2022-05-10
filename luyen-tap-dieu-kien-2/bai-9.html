@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 9</title>
+</head>
+<body>
+<script>
+    let a=+prompt('Nhập cạnh a');
+    if (a>0) {
+        let b=+prompt('Nhập cạnh b');
+        if (b>0) {
+            let c=+prompt('Nhập cạnh c');
+            if (c>0) {
+                if ((a+b>c) && (b+c>a) && (a+c>b)) {
+                    alert('3 cạnh thõa mãn tam giác');
+                }
+                else {
+                    alert('không thõa mãn tam giác');
+                }
+            }
+            else {
+                alert('cạnh c sai');
+            }
+        }
+        else {
+            alert('cạnh b sai');
+        }
+    }
+    else {
+        alert('cạnh a sai');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7</title>
+</head>
+<body>
+<script>
+  let phicodinh=25000;
+  let sophutgoi=+prompt('Nhập tổng số phút gọi');
+  let phi=0;
+  if (sophutgoi<0) {
+      alert('Nhập sai');
+  }
+  else if (sophutgoi>200) {
+      phi=phicodinh+50*600+150*400+(sophutgoi-200)*200;
+  }
+  else if (sophutgoi>50) {
+      phi=phicodinh+50*600+(sophutgoi-50)*400;
+  }
+  else {
+      phi=phicodinh+sophutgoi*600;
+  }
+  alert('Tiền cước là '+phi+' VNĐ');
+</script>
+</body>
+</html>

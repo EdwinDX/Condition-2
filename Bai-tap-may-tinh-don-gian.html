@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="7">
+                <input type="text" id="show" placeholder="0" style="text-align: right">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="getValue('1')"></td>
+            <td></td>
+            <td><input type="button" value="2" onclick="getValue('2')"></td>
+            <td></td>
+            <td><input type="button" value="3" onclick="getValue('3')"></td>
+            <td></td>
+            <td><input type="button" value="+" onclick="getValue('+')"></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><input type="button" value="4" onclick="getValue('4')"></td>
+            <td></td>
+            <td><input type="button" value="5" onclick="getValue('5')"></td>
+            <td></td>
+            <td><input type="button" value="6" onclick="getValue('6')"></td>
+            <td></td>
+            <td><input type="button" value="-" onclick="getValue('-')"></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><input type="button" value="7" onclick="getValue('7')"></td>
+            <td></td>
+            <td><input type="button" value="8" onclick="getValue('8')"></td>
+            <td></td>
+            <td><input type="button" value="9" onclick="getValue('9')"></td>
+            <td></td>
+            <td><input type="button" value="x" onclick="getValue('*')"></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><input type="reset" value="C"></td>
+            <td></td>
+            <td><input type="button" value="0" onclick="getValue('0')"></td>
+            <td></td>
+            <td><input type="button" value="=" onclick="getResult()"></td>
+            <td></td>
+            <td><input type="button" value="/" onclick="getValue('/')"></td>
+            <td></td>
+        </tr>
+        <tr></tr>
+    </table>
+</form>
+<script>
+    function getValue(input){
+        document.getElementById('show').value += input;
+        // document.getElementById('show').value= document.getElementById('show').value + input;
+    }
+    function getResult() {
+        let result=eval(document.getElementById('show').value);
+        document.getElementById('show').value=result;
+    }
+</script>
+</body>
+</html>

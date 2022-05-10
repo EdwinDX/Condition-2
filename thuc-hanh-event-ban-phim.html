@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành sự kiện bàn phím</title>
+</head>
+<body onload="keyReady()">
+<form>
+    <table>
+        <tr>
+            <td></td>
+            <td style="text-align: center">
+                <input type="button" value="UP" onclick="MoveUp()">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="LEFT" onclick="MoveLeft()">
+            </td>
+            <td>
+                <input type="button" value="DOWN" onclick="MoveDown()">
+            </td>
+            <td>
+                <input type="button" value="RIGHT" onclick="MoveRight()">
+            </td>
+        </tr>
+    </table>
+</form>
+    <img id="myImage" src="image/cat.jpg" alt="Ảnh con mèo" style="width: 150px;position: absolute;height: 150px;top: 100px;left: 0;">
+    <script>
+        function MoveUp() {
+            let cat = document.getElementById('myImage');
+            cat.style.top = parseInt(cat.style.top) - 10 + 'px';
+        }
+        function MoveDown() {
+            let cat = document.getElementById('myImage');
+            cat.style.top = parseInt(cat.style.top) + 10 + 'px';
+        }
+        function MoveRight() {
+            let cat = document.getElementById('myImage');
+            cat.style.left = parseInt(cat.style.left) + 10 + 'px';
+        }
+        function MoveLeft() {
+            let cat = document.getElementById('myImage');
+            cat.style.left = parseInt(cat.style.left) - 10 + 'px';
+        }
+        function keypressed() {
+            switch (event.keyCode) {
+                case 37:
+                    MoveLeft();
+                    break;
+                case 39:
+                    MoveRight();
+                    break;
+                case 38:
+                    MoveUp();
+                    break;
+                case 40:
+                    MoveDown();
+                    break;
+            }
+        }
+        function keyReady() {
+            window.addEventListener('keydown',keypressed)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 11</title>
+</head>
+<body>
+<script>
+    let luongthang=+prompt('Nhập lương tháng');
+    let thue=0;
+    if (luongthang>=0) {
+        if (luongthang<=5) {
+            thue=luongthang*0.05;
+
+        }
+        else if (luongthang<=10) {
+            thue=luongthang*0.1-0.25;
+        }
+        else if (luongthang<=18) {
+            thue=luongthang*0.15-0.75;
+        }
+        else if (luongthang<=32) {
+            thue=luongthang*0.2-1.65;
+        }
+        else if (luongthang<=52) {
+            thue=luongthang*0.25-3.25;
+        }
+        else if (luongthang<=80) {
+            thue=luongthang*0.3-5.85;
+        }
+        else {
+            thue=luongthang*0.35-9.85;
+        }
+    }
+    else {
+        alert('Nhập không hợp lệ');
+    }
+alert('Tiền thuế là '+thue+' tr')
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 12</title>
+</head>
+<body>
+<script>
+  let tienbandau=+prompt('Nhập số tiền ban đầu');
+  if (tienbandau>0) {
+      let laisuatthang=+prompt('Nhập lãi suất tháng');
+      if (laisuatthang>0) {
+          let sothanggui = +prompt('Nhập số tháng gửi');
+          if (sothanggui>=1) {
+              let tienlai = tienbandau*laisuatthang*sothanggui;
+              alert('Tiền lãi là '+tienlai);
+          }
+          else {
+              alert('Nhập sai số tháng');
+          }
+      }
+      else {
+          alert('Nhập sai lãi suất tháng');
+      }
+  }
+  else {
+      alert('Nhập sai số tiền ban đầu');
+  }
+</script>
+</body>
+</html>

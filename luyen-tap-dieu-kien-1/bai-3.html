@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 3</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập số nguyên a');
+    let check = Number.isInteger(a);
+    if (check) {
+        if (a>0) {
+            alert('số nguyên nhập vào lớn hơn 0');
+        }
+        else if (a<0) {
+            alert('số nguyên nhập vào bé hơn 0');
+        }
+        else {
+            alert('số nguyên nhập vào bằng 0');
+        }
+    }
+    else {
+        alert('Số nhập vào không phải số nguyên');
+    }
+</script>
+</body>
+</html>

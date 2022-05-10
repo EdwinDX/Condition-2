@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<script>
+  let thuongky = +prompt('Nhập điểm thường kỳ');
+  if ((thuongky<0) || (thuongky>10)) {
+      alert('Điểm thường kỳ sai');
+  }
+  else {
+      let giuaky = +prompt('Nhập điểm giữa kỳ');
+      if ((giuaky<0) || (giuaky>10)) {
+          alert('Điểm giữa kỳ sai');
+      }
+      else {
+          let cuoiky = +prompt('Nhập điểm cuối kỳ');
+          if ((cuoiky<0) || (cuoiky>10)) {
+              alert('Điểm cuối kỳ sai');
+          }
+          else {
+              let result = thuongky*0.2+giuaky*0.3+cuoiky*0.5;
+              if (result<=4) {
+                  alert('Học lực yếu');
+              }
+              else if (result<=6.5) {
+                  alert('Học lực trung bình');
+              }
+              else if (result<=8) {
+                  alert('Học lực khá');
+              }
+              else if (result<=9.5) {
+                  alert('Học lực giỏi');
+              }
+              else {
+                  alert('Học lực xuất sắc');
+              }
+          }
+      }
+  }
+</script>
+</body>
+</html>

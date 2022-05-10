@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7</title>
+</head>
+<body>
+
+<script>
+    let a = +prompt('nhập a');
+    let b = +prompt('nhập b');
+    let c = +prompt('nhập c');
+    if (a==0) {
+        if (b==0) {
+            if (c==0) {
+                alert('vô số nghiệm');
+            }
+            else {
+                alert('vô nghiệm');
+            }
+        }
+        else {
+            alert('nghiệm' +(-c/b));
+        }
+    }
+    else {
+        let delta = b*b - 4*a*c;
+        if (delta==0) {
+            let x=(-b)/(2*a);
+            alert('nghiệm kép '+x);
+        }
+        else if (delta > 0) {
+            let x1 = (-b+Math.pow(delta,1/2))/(2*a);
+            let x2 = (-b-Math.pow(delta,1/2))/(2*a);
+            alert('nghiệm 1 là '+x1 + ' và nghiệm 2 là '+x2);
+        }
+        else {
+            alert('vô nghiệm');
+        }
+    }
+</script>
+</body>
+</html>

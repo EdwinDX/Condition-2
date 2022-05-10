@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 10</title>
+</head>
+<body>
+<script>
+  let sokWh = +prompt('Nhập số kWh');
+  let pay = 0;
+  if (sokWh>0) {
+      if (sokWh<50) {
+          pay=sokWh*1678;
+      }
+      else if (sokWh<100) {
+          pay=sokWh*1734;
+      }
+      else if (sokWh<200) {
+          pay=sokWh*2014;
+      }
+      else if (sokWh<300) {
+          pay=sokWh*2536;
+      }
+      else if (sokWh<400) {
+          pay=sokWh*2834;
+      }
+      else {
+          pay=sokWh*2927;
+      }
+  }
+  else {
+      alert('Nhập không đúng');
+  }
+  alert('Số tiền điện là '+pay+' VNĐ');
+</script>
+</body>
+</html>

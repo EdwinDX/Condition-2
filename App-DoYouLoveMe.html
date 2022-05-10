@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng Do You Love Me</title>
+</head>
+<body>
+<h3>DO YOU LOVE ME?</h3>
+<button onclick="alert('<3')">YES</button>
+<button id="getNo" style="position: absolute" onmouseover="neverNo()">NO</button>
+<script>
+    // let height = window.innerHeight;
+    // let width = window.innerWidth;
+    function neverNo() {
+        let x = Math.random()*500;
+        let y = Math.random()*500;
+        let btnNo = document.getElementById('getNo');
+        btnNo.style.left =x +'px';
+        btnNo.style.top =y +'px';
+    }
+</script>
+</body>
+</html>

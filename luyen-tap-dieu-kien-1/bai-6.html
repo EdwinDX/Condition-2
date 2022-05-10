@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 6</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập doanh số');
+    let hoahong=0;
+    if (a<0) {
+        alert('Nhập sai');
+    }
+    else {
+        if (a<=100000000) {
+            hoahong=a*0.05;
+        }
+        else if (a<=300000000) {
+            hoahong=a*0.1;
+        }
+        else {
+            hoahong=a*0.2;
+        }
+    }
+    alert('Hoa hồng nhận được là '+hoahong+' VNĐ');
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 4</title>
+</head>
+<body>
+<script>
+  let a = +prompt('nhập số nguyên a');
+  if (Number.isInteger(a)) {
+      let b = +prompt('nhập số nguyên b');
+      if (Number.isInteger(b)) {
+          let c = +prompt('nhập số nguyên c');
+          if (Number.isInteger(c)) {
+              if ((a>b) && (a>c)) {
+                  alert('a lớn nhất');
+              }
+              else if (b>c) {
+                  alert('b lớn nhất');
+              }
+              else {
+                  alert('c lớn nhất');
+              }
+          }
+          else {
+              alert('c không phải số nguyên');
+          }
+      }
+      else {
+          alert('b không phải số nguyên');
+      }
+  }
+  else {
+      alert('a không phải số nguyên');
+  }
+</script>
+</body>
+</html>
